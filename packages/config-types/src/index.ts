@@ -65,6 +65,8 @@ export const modelDescriptionSchema = z.object({
   model: z.string(),
   apiKey: z.string().optional(),
   apiBase: z.string().optional(),
+  apiId: z.string().optional(),
+  apiSecret: z.string().optional(),
   contextLength: z.number().optional(),
   template: z
     .enum([
@@ -118,6 +120,8 @@ export const embeddingsProviderSchema = z.object({
   ]),
   apiBase: z.string().optional(),
   apiKey: z.string().optional(),
+  apiId: z.string().optional(),
+  apiSecret: z.string().optional(),
   model: z.string().optional(),
   deployment: z.string().optional(),
   apiType: z.string().optional(),

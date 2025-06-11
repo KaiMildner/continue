@@ -41,6 +41,7 @@ import Msty from "./Msty";
 import NCompass from "./NCompass";
 import Nebius from "./Nebius";
 import Novita from "./Novita";
+import NTTH from "./NTTH";
 import Nvidia from "./Nvidia";
 import Ollama from "./Ollama";
 import OpenAI from "./OpenAI";
@@ -71,6 +72,7 @@ export const LLMClasses = [
   Llamafile,
   Moonshot,
   Ollama,
+  NTTH,
   Replicate,
   TextGenWebUI,
   Together,

@@ -226,6 +226,8 @@ export const configSchema = z.object({
   proxy: z.string().optional(),
   api_base: z.string().optional(),
   api_key: z.string().optional(),
+  api_Id: z.string().optional(),
+  api_secret: z.string().optional(),
 });
 
 export type Config = z.infer<typeof configSchema>;

@@ -149,6 +149,8 @@ export abstract class BaseLLM implements ILLM {
   logger?: ILLMLogger;
   llmRequestHook?: (model: string, prompt: string) => any;
   apiKey?: string;
+  apiId?: string;
+  apiSecret?: string;
 
   // continueProperties
   apiKeyLocation?: string;
@@ -191,6 +193,9 @@ export abstract class BaseLLM implements ILLM {
       ...(this.constructor as typeof BaseLLM).defaultOptions,
       ..._options,
     };
+
+    this.apiId = options.apiId;
+    this.apiSecret = options.apiSecret;
 
     this.model = options.model;
     // Use @continuedev/llm-info package to autodetect certain parameters

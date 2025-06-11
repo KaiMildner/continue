@@ -573,6 +573,8 @@ export interface LLMOptions {
   logger?: ILLMLogger;
   llmRequestHook?: (model: string, prompt: string) => any;
   apiKey?: string;
+  apiId?: string;
+  apiSecret?: string;
 
   // continueProperties
   apiKeyLocation?: string;
